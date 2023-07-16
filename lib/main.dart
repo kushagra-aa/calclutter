@@ -64,7 +64,6 @@ class _CalculatorState extends State<Calculator> {
       val = operand1! * 10 + v;
     }
     setState(() {
-      print(val);
       operand1 = val;
       changeText('$val');
     });
@@ -122,7 +121,12 @@ class _CalculatorState extends State<Calculator> {
         break;
       default:
     }
-    changeText('$ans');
+    setState(() {
+      operand1 = null;
+      operand2 = null;
+      operato = '';
+    });
+    changeOp1(ans.toInt());
   }
 
   reset() {
