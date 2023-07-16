@@ -30,5 +30,10 @@ Built with 🤍 For You!
 - Flutter Widgets
   - Stateless Widgets
   - Statefull Widgets
+- Scaffold
+- AppBar
+- Columns
+- Rows
+- Elevated Button
 - Dart Functions
 - Dart Classes
